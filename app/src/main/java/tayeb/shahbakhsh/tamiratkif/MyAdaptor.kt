@@ -7,14 +7,10 @@ import tayeb.shahbakhsh.tamiratkif.databinding.RvItemBinding
 
 class MyAdapter(val list: MutableList<Item>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
-    inner class MyViewHolder(val binding:RvItemBinding): RecyclerView.ViewHolder(binding.root){
-
-    }
+    inner class MyViewHolder(val binding:RvItemBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyAdapter.MyViewHolder =
-        MyViewHolder(
-            RvItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
-        )
+        MyViewHolder(RvItemBinding.inflate(LayoutInflater.from(parent.context),parent,false))
 
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
         holder.binding.itemNameTv.text = list[position].name
@@ -22,6 +18,5 @@ class MyAdapter(val list: MutableList<Item>) : RecyclerView.Adapter<MyAdapter.My
         holder.binding.itemDateTv.text= list[position].date
     }
 
-    override fun getItemCount(): Int =
-        list.size
+    override fun getItemCount(): Int = list.size
 }
