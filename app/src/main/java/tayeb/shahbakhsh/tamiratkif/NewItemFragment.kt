@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import tayeb.shahbakhsh.tamiratkif.databinding.FragmentNewItemBinding
 
 class NewItemFragment : Fragment() {
 
@@ -18,13 +19,17 @@ class NewItemFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_new_item, container, false)
+    ): View {
+        val binding = FragmentNewItemBinding.inflate(LayoutInflater.from(activity),container,false)
+
+
+
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(NewItemViewModel::class.java)
+        viewModel = ViewModelProvider(this)[NewItemViewModel::class.java]
         // TODO: Use the ViewModel
     }
 
