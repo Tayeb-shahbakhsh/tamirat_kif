@@ -40,6 +40,7 @@ class MainFragment : Fragment() {
         binding.itemsRv.layoutManager = LinearLayoutManager(activity)
         binding.itemsRv.adapter = MyAdapter(itemsList)
 
+
         return binding.root
     }
 
