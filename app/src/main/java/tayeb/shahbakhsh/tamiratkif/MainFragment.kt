@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import tayeb.shahbakhsh.tamiratkif.databinding.FragmentMainBinding
@@ -40,6 +41,9 @@ class MainFragment : Fragment() {
         binding.itemsRv.layoutManager = LinearLayoutManager(activity)
         binding.itemsRv.adapter = MyAdapter(itemsList)
 
+        binding.addFab.setOnClickListener{
+            findNavController().navigate(R.id.action_mainFragment2_to_newItemFragment2)
+        }
 
         return binding.root
     }
