@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/newItemFragment2"
-        android:name="tayeb.shahbakhsh.tamiratkif.NewItemFragment"
+        android:name="tayeb.shahbakhsh.tamiratkif.fragment.NewItemFragment"
         android:label="fragment_new_item"
         tools:layout="@layout/fragment_new_item" />
     <fragment
         android:id="@+id/mainFragment2"
-        android:name="tayeb.shahbakhsh.tamiratkif.MainFragment"
+        android:name="tayeb.shahbakhsh.tamiratkif.fragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action

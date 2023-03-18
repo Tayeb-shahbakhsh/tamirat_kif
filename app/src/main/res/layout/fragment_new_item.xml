@@ -6,7 +6,7 @@
     android:paddingStart="24dp"
     android:paddingEnd="24dp"
     android:layout_height="match_parent"
-    tools:context=".NewItemFragment">
+    tools:context=".fragment.NewItemFragment">
 
     <EditText
         android:id="@+id/add_name_tv"

@@ -1,4 +1,4 @@
-package tayeb.shahbakhsh.tamiratkif
+package tayeb.shahbakhsh.tamiratkif.fragment
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,7 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
+import tayeb.shahbakhsh.tamiratkif.model.Item
+import tayeb.shahbakhsh.tamiratkif.viewmodel.MainFragmentViewModel
+import tayeb.shahbakhsh.tamiratkif.MyAdapter
+import tayeb.shahbakhsh.tamiratkif.R
 import tayeb.shahbakhsh.tamiratkif.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {

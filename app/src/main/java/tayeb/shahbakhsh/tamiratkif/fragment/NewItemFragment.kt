@@ -1,4 +1,4 @@
-package tayeb.shahbakhsh.tamiratkif
+package tayeb.shahbakhsh.tamiratkif.fragment
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import tayeb.shahbakhsh.tamiratkif.viewmodel.NewItemViewModel
 import tayeb.shahbakhsh.tamiratkif.databinding.FragmentNewItemBinding
 
 class NewItemFragment : Fragment() {
