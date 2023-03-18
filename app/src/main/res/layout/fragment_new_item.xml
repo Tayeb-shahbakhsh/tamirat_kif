@@ -37,11 +37,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="گرفتن عکس"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/save_item_button"
         app:layout_constraintEnd_toEndOf="@id/add_number_tv"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/add_number_tv"
         app:layout_constraintTop_toBottomOf="@+id/add_number_tv" />
 
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_photo_button"
+        android:id="@+id/save_item_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
