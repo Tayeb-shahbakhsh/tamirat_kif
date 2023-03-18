@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import tayeb.shahbakhsh.tamiratkif.databinding.RvItemBinding
-import tayeb.shahbakhsh.tamiratkif.model.Item
+import tayeb.shahbakhsh.tamiratkif.data.Item
 
 class MyAdapter(val list: MutableList<Item>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 

@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import tayeb.shahbakhsh.tamiratkif.model.Item
+import tayeb.shahbakhsh.tamiratkif.data.Item
 import tayeb.shahbakhsh.tamiratkif.viewmodel.MainFragmentViewModel
 import tayeb.shahbakhsh.tamiratkif.MyAdapter
 import tayeb.shahbakhsh.tamiratkif.R
