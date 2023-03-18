@@ -1,4 +1,4 @@
-package tayeb.shahbakhsh.tamiratkif
+package tayeb.shahbakhsh.tamiratkif.viewmodel
 
 import androidx.lifecycle.ViewModel
 

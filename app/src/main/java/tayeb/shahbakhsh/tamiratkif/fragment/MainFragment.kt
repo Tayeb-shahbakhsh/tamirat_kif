@@ -1,4 +1,4 @@
-package tayeb.shahbakhsh.tamiratkif
+package tayeb.shahbakhsh.tamiratkif.fragment
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,7 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
+import tayeb.shahbakhsh.tamiratkif.data.Item
+import tayeb.shahbakhsh.tamiratkif.viewmodel.MainFragmentViewModel
+import tayeb.shahbakhsh.tamiratkif.MyAdapter
+import tayeb.shahbakhsh.tamiratkif.R
 import tayeb.shahbakhsh.tamiratkif.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -26,16 +29,16 @@ class MainFragment : Fragment() {
         val binding = FragmentMainBinding.inflate(LayoutInflater.from(activity), container, false)
 
         var itemsList = mutableListOf<Item>(
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
-            Item("طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
+            Item(0,"طیب","0902123123","1401/02/01",0),
         )
 
         binding.itemsRv.layoutManager = LinearLayoutManager(activity)
